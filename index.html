@@ -7,28 +7,67 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body class = "main-content">
-    <header class="section sec1 header active">
-
+    <header class="section sec1 header active" id = "main">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/webdevdog.png" width="100%" height="100%" alt = "dev photo">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>WOof WOof.</span>
+                    A Web Developer.                     
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetura dipiscing elit, sed do eiusmod tempor.
+                    Morbi tincidunt ornare massa eget. Purus in massa tempor nec feugiat nisl pretium.
+                    Platea dictumst quisque sagittis purus sit. Nulla malesuada pellentesque elit eget.
+                </p>
+                <a href="https://www.youtube.com/watch?v=W-5jkFPtLcc" target="_blank" class= "main-btn">
+                    <div class="btn-con">
+                        <span class = "btn-text">Download CV</span>
+                        <span class = "btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 blogs"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id = "about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id = "portfolio"></section>
+        <section class="section sec4 blogs" id = "blogs"></section>
+        <section class="section sec5 contact" id = "contact"></section>
     </main>
     <div class="controls">
-        <div class="control control-1 active-btn">
-            <i class="fa-sharp fa-solid fa-house"></i>
+        <div class="control control-1 active-btn" data-id="main">
+            <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control control-2"></div>
-        <div class="control control-3 "></div>
-        <div class="control control-4 "></div>
-        <div class="control control-5 "></div>
+
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3 " data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-4 " data-id="blogs">
+            <i class="fa-solid fa-newspaper" data-id="about"></i>
+        </div>
+        <div class="control control-5 " data-id="contact">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
     </div>
+
+    <script src="styles/app.js"></script>
 </body>
 </html>
